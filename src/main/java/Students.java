@@ -12,7 +12,7 @@ import java.util.Scanner;
 // name of constructor needs to match the class name
 // must not have a return type
 
-public class Student {
+public class Students {
     String name;
     String surname;
     String age;
@@ -21,7 +21,7 @@ public class Student {
     String major;
     String email;
 
-    Student(String name, String surname, String age, String grade, String address, String major, String email) {
+    Students(String name, String surname, String age, String grade, String address, String major, String email) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -63,7 +63,7 @@ public class Student {
         System.out.println("Student email: ");
         String email = studentInfo.nextLine();  // Read user input
 
-        Student object = new Student(name, surname, age, grade, address, major, email);
+        Students object = new Students(name, surname, age, grade, address, major, email);
         System.out.println(object.name + ", " + object.surname + ", " + object.age + ", " + object.grade + ", "
                 + object.address + ", " + object.major + ", " + object.email);
 

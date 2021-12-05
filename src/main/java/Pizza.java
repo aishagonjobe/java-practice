@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class Pizza extends Food{
+public class Pizza implements Food{
 
     public static double calculatePrice (int size){
         if (size == 15){
@@ -19,16 +19,28 @@ public class Pizza extends Food{
         }
     }
 
+    public void canEat() {
+        System.out.println("I am eating.");
+    }
+
     public static void main(String[] args) {
-        Food pizza = new Food();
+
+        Pizza pizza = new Pizza();
+
+        pizza.canEat();
+
+//        Food pizza = new Food();
 
         Scanner food = new Scanner(System.in);
         System.out.println("Enter pizza size (15 or 30): ");
         int pizzaSize = food.nextInt();  // Read user input
 
-        pizza.setSize(pizzaSize);
-        pizza.setPrice(calculatePrice(pizzaSize));
-        System.out.println("Your pizza is " + "$" + pizza.getPrice());
-        System.out.println(pizza.price);
+        System.out.println(calculatePrice(pizzaSize));
+
+//        pizza.setSize(pizzaSize);
+//        pizza.setPrice(calculatePrice(pizzaSize));
+//        System.out.println("Your pizza is " + "$" + pizza.getPrice());
+//        System.out.println(pizza.price);
+
     }
 }

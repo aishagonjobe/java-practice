@@ -1,10 +1,10 @@
-//Create a Food parent class
+public interface FoodI {
+    //Create a Food parent class
 //Create Pizza child class extends food
 //        canEat()
 //
 
-interface Food {
-    public void canEat();
+        public void canEat();
 
 //    public int size;
 //    public double price;
