@@ -2,6 +2,9 @@
 //        e.g if size of pizza is 15cm: 10 dollars
 //        if size is 30cm 20 dollars double the price
 
+// Usage of 'super' key word can be used to refer to immediate parent class variable
+// it can be used to invoke a parent class variable, method, and constructor.
+
 import java.util.Scanner;
 
 public class Pizza extends Food{
