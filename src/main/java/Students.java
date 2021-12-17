@@ -32,7 +32,7 @@ public class Students {
     }
 
 //        Student (){
-//            this.address="Main Street";
+//            this.address="Inheritance.Main Street";
 //            this.major="Mathematics";
 //            this.email="bob@email.com";
 //        }
